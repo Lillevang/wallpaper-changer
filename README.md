@@ -46,6 +46,7 @@ Currently, the `Wallpaper-Changer.ps1` script supports the following weather sta
 You will find separate pairs of folders for each weather condition (day and night). 
 These folders contain jpeg images (3936x2624 pixels) each labeled from 1 to the number of images in the folder. 
 You can add/remove any image you want to in the existing folders.
+
 ---
 
 ## Contributing 👍
