@@ -62,24 +62,25 @@ function Set-ApiProperty {
     Out-File -FilePath .\config\config.properties -InputObject $property
 }
 
+# Do not clean up below function. It is very sensitive wrt line spacing etc.
 function Set-Wallpaper($WallpaperPath) {
   
-    $code= @'
-    using System.Runtime.InteropServices;
-    namespace Win32 {
-        public class Wallpaper {
-            [DllImport("user32.dll", CharSet=CharSet.Auto)]
-            static extern int SystemParametersInfo(int uAction, int uParam, string lpvParam, int fuWinIni);
+$code= @'
+using System.Runtime.InteropServices;
+namespace Win32{
+    public class Wallpaper{
+        [DllImport("user32.dll", CharSet=CharSet.Auto)]
+        static extern int SystemParametersInfo(int uAction, int uParam, string lpvParam, int fuWinIni);
 
-            public static void SetWallpaper(string filePath) {
-                SystemParametersInfo(20,0,filePath, 3);
-            }
+        public static void SetWallpaper(string filePath) {
+            SystemParametersInfo(20,0,filePath, 3);
         }
     }
+}
 '@
 
-    Add-Type $code
-    [Win32.Wallpaper]::SetWallpaper($WallpaperPath)
+Add-Type $code
+[Win32.Wallpaper]::SetWallpaper($WallpaperPath)
 }
 
 main
