@@ -2,9 +2,9 @@
     WallPaperChanger 🖼️
 </h1>
 
-Re-implementation of https://github.com/yangman946/WallPaperChanger in pure Powershell.
 
-<hr>
+
+
 <p align="center">
     <img src="https://img.shields.io/badge/os-windows-blue.svg"> 
     <img src="https://img.shields.io/github/stars/Lillevang/wallpaper-changer?color=ccf">
@@ -12,6 +12,8 @@ Re-implementation of https://github.com/yangman946/WallPaperChanger in pure Powe
     <img src="https://img.shields.io/github/contributors/Lillevang/wallpaper-changer?color=9ea">
    
 </p>
+
+Re-implementation of https://github.com/yangman946/WallPaperChanger in pure Powershell.
 
 ## Description ⛈️
 
