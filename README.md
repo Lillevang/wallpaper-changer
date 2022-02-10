@@ -23,7 +23,7 @@ This is a re-implementation of https://github.com/yangman946/WallPaperChanger in
 
 - Powershell 7.2 or newer
 - Your own api key for openweather: https://openweathermap.org/api
-- This api key must be in a file at: src/config/config.properties with a single line like: `app.api-key=<YOUR-API-KEY>`
+    - This api key must be in a file at: src/config/config.properties with a single line like: `app.api-key=<YOUR-API-KEY>`
   - You will be prompted for your api key the first time the application is run and the file will be created automatically
 
 *Note:
