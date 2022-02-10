@@ -11,25 +11,32 @@
    
 </p>
 
-Re-implementation of https://github.com/yangman946/WallPaperChanger in pure Powershell.
+
 
 ## Description ⛈️
 
 This Powershell script changes your desktop wallpaper based on the weather.
 
+This is a re-implementation of https://github.com/yangman946/WallPaperChanger in pure Powershell.
 
-## Running & Dependencies ⚡
+## Dependencies ⚡
 
 - Powershell 7.2 or newer
 - Your own api key for openweather: https://openweathermap.org/api
 - This api key must be in a file at: src/config/config.properties with a single line like: `app.api-key=<YOUR-API-KEY>`
-  - You will be prompted for your api key the first time the application is run
-- Run file from powershell or set up a scheduler to run it periodically
+  - You will be prompted for your api key the first time the application is run and the file will be created automatically
 
-### Optional
+**Note:**
+
 This version does not support the original overlay of current time, weather forecast etc. Instead an application like [Rainmeter](https://www.rainmeter.net/) can be used to achieve this effect.
 
-## Customising Wallpapers ✏️
+
+## Running
+- Run file from powershell or set up a scheduler to run it periodically
+
+
+
+## Customizing Wallpapers ✏️
 
 Currently, the `Wallpaper-Changer.ps1` script supports the following weather states for both day and night:
 - Clear
