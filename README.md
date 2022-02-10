@@ -1,8 +1,6 @@
 <h1 align="center">
-    WallPaperChanger 🖼️
+    WallPaper-Changer 🖼️
 </h1>
-
-
 
 
 <p align="center">
@@ -20,13 +18,6 @@ Re-implementation of https://github.com/yangman946/WallPaperChanger in pure Powe
 This Powershell script changes your desktop wallpaper based on the weather.
 
 
-
-## Cloning 🌀
-
-`$ git clone https://github.com/Lillevang/wallpaper-changer`
-
-
-
 ## Running & Dependencies ⚡
 
 - Powershell 7.2 or newer
@@ -41,27 +32,29 @@ This version does not support the original overlay of current time, weather fore
 ## Customising Wallpapers ✏️
 
 Currently, the `Wallpaper-Changer.ps1` script supports the following weather states for both day and night:
-<ul>
-  <li>Clear </li>
-  <li>Mist (cloudy)</li>
-  <li>Rain </li>
-  <li>and thunder </li>
-</ul>
+- Clear
+- Mist (cloudy)
+- Rain
+- thunder
 
 You will find separate pairs of folders for each weather condition (day and night). 
 These folders contain jpeg images (3936x2624 pixels) each labeled from 1 to the number of images in the folder. 
 If you wish to replace images, ensure that:
 
-
-<ul>
-  <li>The images are of correct size (recommended 3936x2624 pixels)</li>
-  <li>The images are in the correct folders</li>
-  <li>The images are properly labelled {weather state}_{day state}_{image index} </li>
-  <li>The images are jpeg images </li>
-</ul>
+- The images are of correct size (recommended 3936x2624 pixels)
+- The images are in the correct folders
+- The images are properly labelled {weather state}_{day state}_{image index} 
+- The images are jpeg images 
 
 ---
 
 ## Contributing 👍
 
-If you wish to contribute to this project, send a pull request, and I will look at it. 
+1. Fork it (https://github.com/your-github-user/wallpaper-changer/fork)
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create a new Pull Request
+
+
+ 
