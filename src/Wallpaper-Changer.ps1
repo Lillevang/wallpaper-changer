@@ -32,7 +32,6 @@ function Get-TimeOfDay($weather_data) {
 }
 
 function Update-Wallpaper($file_path) {
-    Write-Output $file_path
     $images=Get-ChildItem -File $file_path
     $file=Get-Random($images.Name)
     $file_path=Join-Path $file_path $file
