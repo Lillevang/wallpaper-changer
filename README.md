@@ -19,13 +19,13 @@ Re-implementation of https://github.com/yangman946/WallPaperChanger in pure Powe
 
 This Powershell script changes your desktop wallpaper based on the weather.
 
----
+
 
 ## Cloning 🌀
 
 `$ git clone https://github.com/Lillevang/wallpaper-changer`
 
----
+
 
 ## Running ⚡
 
