@@ -20,7 +20,7 @@ function Get-Weather($weather_data) {
     elseif (700 -lt $weather_id -and $weather_id -lt 781)   { return "mist"}
     elseif ($weather_id -ge 800)                            { return "clear"}
     elseif (200 -le $weather_id -and $weather_id -le 232)   { return "thunder"}
-    else { throw "Weather could not be determined from id: $weather_id" }
+    else { throw "Weather could not be determined from id: $weather_id" } # Alternatively have some dummy image that can be used as fallback
 }
 
 function Get-TimeOfDay($weather_data) {
@@ -63,6 +63,7 @@ function Set-ApiProperty {
 }
 
 # Do not clean up below function. It is very sensitive wrt line spacing etc.
+# Source: https://techexpert.tips/powershell/powershell-configure-wallpaper/
 function Set-Wallpaper($WallpaperPath) {
   
 $code= @'
