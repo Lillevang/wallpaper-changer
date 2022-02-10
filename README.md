@@ -45,13 +45,7 @@ Currently, the `Wallpaper-Changer.ps1` script supports the following weather sta
 
 You will find separate pairs of folders for each weather condition (day and night). 
 These folders contain jpeg images (3936x2624 pixels) each labeled from 1 to the number of images in the folder. 
-If you wish to replace images, ensure that:
-
-- The images are of correct size (recommended 3936x2624 pixels)
-- The images are in the correct folders
-- The images are properly labelled {weather state}_{day state}_{image index} 
-- The images are jpeg images 
-
+You can add/remove any image you want to in the existing folders.
 ---
 
 ## Contributing 👍
