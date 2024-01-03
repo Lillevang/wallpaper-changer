@@ -46,7 +46,8 @@ Currently, the `Wallpaper-Changer.ps1` script supports the following weather sta
 - Clear
 - Mist (cloudy)
 - Rain
-- thunder
+- Thunder
+- Snow
 
 You will find separate pairs of folders for each weather condition (day and night). 
 These folders contain jpeg images (3936x2624 pixels) each labeled from 1 to the number of images in the folder. 
