@@ -16,7 +16,8 @@ function Get-WeatherData {
 
 function Get-Weather($weather_data) {
     $weather_id=$weather_data.weather.id
-    if (300 -le $weather_id -and $weather_id -lt 623)       { return "rain" }
+    if (600 -eq $weather_id)                                { return "snow"}
+    elseif (300 -le $weather_id -and $weather_id -lt 623)   { return "rain" }
     elseif (700 -lt $weather_id -and $weather_id -lt 781)   { return "mist"}
     elseif ($weather_id -ge 800)                            { return "clear"}
     elseif (200 -le $weather_id -and $weather_id -le 232)   { return "thunder"}
@@ -32,9 +33,13 @@ function Get-TimeOfDay($weather_data) {
 }
 
 function Update-Wallpaper($file_path) {
+    Write-Host $file_path
     $images=Get-ChildItem -File $file_path
+    Write-Host $images
     $file=Get-Random($images.Name)
+    Write-Host $file
     $file_path=Join-Path $file_path $file
+    Write-Host $file_path
     Set-Wallpaper(Resolve-Path $file_path)
 }
 
